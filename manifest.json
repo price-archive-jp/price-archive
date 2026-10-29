@@ -3,7 +3,7 @@
  "name": "UNIQLO 価格アーカイブ（非公式）",
  "description": "値下げ・新作・期間限定の価格を、毎日こつこつ記録。",
  "disclaimer": "本サイトは個人が運営する非公式の価格記録アーカイブです。ユニクロ（UNIQLO）およびファーストリテイリングとは一切関係ありません。価格・在庫・販売期間は変動し、掲載しているのは観測時点の情報です。最新の情報は必ず公式サイトでご確認ください。",
- "generated_at": "2026-10-29 13:26:50",
+ "generated_at": "2026-10-29 13:28:56",
  "base_url": "https://magnumagnum-code.github.io/price-archive/",
  "repo_url": "https://github.com/magnumagnum-code/price-archive",
  "coverage": {
