@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Sitemap: https://magnumagnum-code.github.io/price-archive/sitemap.xml
+Sitemap: https://price-archive-jp.github.io/price-archive/sitemap.xml

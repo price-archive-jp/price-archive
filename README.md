@@ -2,11 +2,11 @@
 
 本サイトは個人が運営する非公式の価格記録アーカイブです。ユニクロ（UNIQLO）およびファーストリテイリングとは一切関係ありません。価格・在庫・販売期間は変動し、掲載しているのは観測時点の情報です。最新の情報は必ず公式サイトでご確認ください。
 
-- サイト: https://magnumagnum-code.github.io/price-archive/
-- 最終生成: 2026-10-29 13:28:56
+- サイト: https://price-archive-jp.github.io/price-archive/
+- 最終生成: 2026-10-29 16:46:13
 - 観測期間: 2026-08-09 〜 2026-10-29
   （81日分 / 商品 826件）
-- 削除・訂正のご依頼: https://github.com/magnumagnum-code/price-archive/issues
+- 削除・訂正のご依頼: https://github.com/price-archive-jp/price-archive
 
 ## このリポジトリについて
 

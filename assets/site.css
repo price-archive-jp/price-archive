@@ -3,51 +3,54 @@
 
 :root {
   color-scheme: light;
-  --bg: #f6f6f3;
+  /* UNIQLO の赤と白を基調にする（ロゴ・画像は使わない） */
+  --bg: #ffffff;
   --surface: #ffffff;
-  --surface-alt: #fbfbf9;
-  --ink: #1c1917;
-  --ink-soft: #44403c;
-  --muted: #6b7280;
-  --line: #e7e5e4;
-  --brand: #0f766e;
-  --brand-dark: #115e59;
-  --brand-soft: #ccfbf1;
-  --sale: #b91c1c;
-  --sale-soft: #fee2e2;
-  --new: #1d4ed8;
-  --new-soft: #dbeafe;
-  --limited: #b45309;
-  --limited-soft: #fef3c7;
-  --down: #b91c1c;
-  --up: #1d4ed8;
+  --surface-alt: #fafafa;
+  --ink: #1a1a1a;
+  --ink-soft: #3f3f3f;
+  --muted: #6b6b6b;
+  --line: #e6e6e6;
+  --brand: #e60012;
+  --brand-dark: #b3000e;
+  --brand-soft: #ffe5e7;
+  --on-brand: #ffffff;
+  --sale: #a5000d;
+  --sale-soft: #ffe3e5;
+  --new: #0b57d0;
+  --new-soft: #e4efff;
+  --limited: #9a5b00;
+  --limited-soft: #fff2d6;
+  --down: #a5000d;
+  --up: #0b57d0;
   --radius: 14px;
   --radius-sm: 9px;
-  --shadow: 0 1px 2px rgba(28, 25, 23, 0.05), 0 10px 30px rgba(28, 25, 23, 0.05);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 10px 30px rgba(0, 0, 0, 0.05);
   --wrap: 1120px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --bg: #121413;
-    --surface: #1b1e1d;
-    --surface-alt: #202423;
-    --ink: #f5f5f4;
-    --ink-soft: #d6d3d1;
-    --muted: #a8a29e;
-    --line: #303534;
-    --brand: #2dd4bf;
-    --brand-dark: #5eead4;
-    --brand-soft: #134e4a;
-    --sale: #fca5a5;
-    --sale-soft: #450a0a;
-    --new: #93c5fd;
-    --new-soft: #172554;
-    --limited: #fcd34d;
-    --limited-soft: #451a03;
-    --down: #fca5a5;
-    --up: #93c5fd;
+    --bg: #111111;
+    --surface: #191919;
+    --surface-alt: #202020;
+    --ink: #f5f5f5;
+    --ink-soft: #d6d6d6;
+    --muted: #a3a3a3;
+    --line: #303030;
+    --brand: #ff5c68;
+    --brand-dark: #ff9aa2;
+    --brand-soft: #3d0b10;
+    --on-brand: #1a0002;
+    --sale: #ff9aa2;
+    --sale-soft: #3d0b10;
+    --new: #8ab4ff;
+    --new-soft: #102347;
+    --limited: #ffd166;
+    --limited-soft: #3a2400;
+    --down: #ff9aa2;
+    --up: #8ab4ff;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.25);
   }
 }
@@ -104,8 +107,9 @@ code {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
   backdrop-filter: blur(10px);
+  border-top: 4px solid var(--brand);
   border-bottom: 1px solid var(--line);
 }
 .header-inner {
@@ -131,7 +135,7 @@ code {
   height: 30px;
   border-radius: 8px;
   background: var(--brand);
-  color: #fff;
+  color: var(--on-brand);
   font-weight: 800;
 }
 .brand-text { font-size: 0.98rem; }
@@ -139,9 +143,9 @@ code {
   display: inline-block;
   margin-left: 0.4rem;
   padding: 0.05rem 0.35rem;
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--brand) 28%, var(--line));
   border-radius: 999px;
-  color: var(--muted);
+  color: var(--brand-dark);
   font-size: 0.65rem;
   font-weight: 600;
   vertical-align: 0.15em;
@@ -221,7 +225,7 @@ main.wrap { padding-block: 1.8rem 3.5rem; }
   border: 1px solid var(--brand);
   border-radius: 999px;
   background: var(--brand);
-  color: #fff;
+  color: var(--on-brand);
   font-weight: 700;
   font-size: 0.9rem;
   text-decoration: none;
@@ -318,7 +322,7 @@ main.wrap { padding-block: 1.8rem 3.5rem; }
   white-space: nowrap;
 }
 .tab:hover { background: var(--surface-alt); }
-.tab[aria-selected="true"] { background: var(--ink); color: var(--bg); }
+.tab[aria-selected="true"] { background: var(--brand); color: var(--on-brand); }
 .tab-count {
   display: inline-block;
   padding: 0 0.35rem;
@@ -428,7 +432,7 @@ main.wrap { padding-block: 1.8rem 3.5rem; }
   border-color: color-mix(in srgb, var(--brand) 25%, transparent);
 }
 .badge-note { background: var(--surface-alt); color: var(--muted); border-color: var(--line); }
-.badge-lowest { background: var(--brand); color: #fff; margin-left: 0.25rem; }
+.badge-lowest { background: var(--brand); color: var(--on-brand); margin-left: 0.25rem; }
 
 .change { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .change.down { color: var(--down); }
@@ -496,8 +500,8 @@ a.cal-day:hover { outline: 2px solid var(--brand); outline-offset: 1px; }
 .cal-empty { color: var(--muted); opacity: 0.45; }
 .cal-level-1 { background: color-mix(in srgb, var(--brand-soft) 45%, var(--surface)); }
 .cal-level-2 { background: color-mix(in srgb, var(--brand-soft) 75%, var(--surface)); }
-.cal-level-3 { background: var(--brand); color: #fff; }
-.cal-level-3 .cal-count { color: rgba(255, 255, 255, 0.85); }
+.cal-level-3 { background: var(--brand); color: var(--on-brand); }
+.cal-level-3 .cal-count { color: color-mix(in srgb, var(--on-brand) 82%, transparent); }
 .cal-count { display: block; font-size: 0.64rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 /* ---------- lists / cards ---------- */
@@ -654,12 +658,6 @@ a.cal-day:hover { outline: 2px solid var(--brand); outline-offset: 1px; }
   .event-price { margin-left: 0; width: 100%; }
   .data-table { font-size: 0.82rem; }
   .data-table th, .data-table td { padding: 0.5rem 0.55rem; }
-}
-
-@media (prefers-color-scheme: dark) {
-  .button, .button:hover { color: #062e2a; }
-  .brand-mark, .badge-lowest, .cal-level-3 { color: #062e2a; }
-  .cal-level-3 .cal-count { color: rgba(6, 46, 42, 0.7); }
 }
 
 @media (prefers-reduced-motion: reduce) {

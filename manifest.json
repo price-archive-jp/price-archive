@@ -3,9 +3,9 @@
  "name": "UNIQLO 価格アーカイブ（非公式）",
  "description": "値下げ・新作・期間限定の価格を、毎日こつこつ記録。",
  "disclaimer": "本サイトは個人が運営する非公式の価格記録アーカイブです。ユニクロ（UNIQLO）およびファーストリテイリングとは一切関係ありません。価格・在庫・販売期間は変動し、掲載しているのは観測時点の情報です。最新の情報は必ず公式サイトでご確認ください。",
- "generated_at": "2026-10-29 13:28:56",
- "base_url": "https://magnumagnum-code.github.io/price-archive/",
- "repo_url": "https://github.com/magnumagnum-code/price-archive",
+ "generated_at": "2026-10-29 16:46:13",
+ "base_url": "https://price-archive-jp.github.io/price-archive/",
+ "repo_url": "https://github.com/price-archive-jp/price-archive",
  "coverage": {
   "first_date": "2026-08-09",
   "last_date": "2026-10-29",
@@ -48,7 +48,7 @@
   "新作の記録は 2026-10-07 以降です。それ以前の新作は値下げとして初めて観測された日から記録されています。",
   "期間限定セールの記録は 2026-09-27 以降です。",
   "91 件のCSVにコレクション列がないため、商品ID単位の索引から補完しています。",
-  "同じ日に複数回取得した 29 ファイルは、その日の最後のスナップショットだけを使用しています。",
+  "同じ日に複数回取得した 30 ファイルは、その日の最後のスナップショットだけを使用しています。",
   "コレクション索引は 2026-10-07 以降のみです。",
   "1 日分の観測データがありません（欠測）。"
  ],
@@ -64,7 +64,7 @@
   "invalid_no_id": 0,
   "invalid_no_price": 0,
   "files_without_collection": 91,
-  "skipped_same_day": 29,
+  "skipped_same_day": 30,
   "skipped_same_day_examples": [
    "uniqlo_sale_20260809_1749.csv",
    "uniqlo_sale_20260818_0952.csv",
