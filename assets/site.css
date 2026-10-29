@@ -656,6 +656,12 @@ a.cal-day:hover { outline: 2px solid var(--brand); outline-offset: 1px; }
   .data-table th, .data-table td { padding: 0.5rem 0.55rem; }
 }
 
+@media (prefers-color-scheme: dark) {
+  .button, .button:hover { color: #062e2a; }
+  .brand-mark, .badge-lowest, .cal-level-3 { color: #062e2a; }
+  .cal-level-3 .cal-count { color: rgba(6, 46, 42, 0.7); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
